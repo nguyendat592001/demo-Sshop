@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>S-Shop</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="header__logo">
+            <img src="./img/Logo.png" alt="" class="header__logo-img">
+        </div>
+        <div class="header__search">
+            <i class="fa-solid fa-magnifying-glass header__search-icon"></i>
+            <input type="text" class="header__search-input" placeholder="Bạn tìm gì hôm nay">
+            <i class="fa-solid fa-xmark header__search-icon-exit"></i>
+        </div>
+        <div class="header__login">
+            <button class="btn btn__login">Đăng Nhập</button>
+            <button class="btn btn__cart">Giỏ Hàng</button>
+            <div class="amount">
+                <p class="amount-text">5</p>
+            </div>
+        </div>
+    </div>
+    <div class="sub_header">
+
+        <div class="sub_header-item sub_header-item--active">
+            <p>Cho bạn</p>
+        </div>
+        <div class="sub_header-item">
+            <i class="fa-solid fa-film sub_header-item-icon"></i>
+            Entertaiment
+        </div>
+        <div class="sub_header-item">
+            <i class="fa-solid fa-music sub_header-item-icon"></i>
+            Music
+        </div>
+        <div class="sub_header-item">
+            <i class="fa-solid fa-dumbbell sub_header-item-icon"></i>
+            Sport & Lifestyle
+        </div>
+        <div class="sub_header-item">
+            <i class="fa-solid fa-bone sub_header-item-icon"></i>
+            Pets
+        </div>
+        <div class="sub_header-item">
+            <i class="fa-solid fa-utensils sub_header-item-icon"></i>
+            Kitchen Accessories
+        </div>
+        <div class="sub_header-item">
+            <i class="fa-solid fa-binoculars sub_header-item-icon"></i>
+            Travel Equipment
+        </div>
+        <div class="sub_header-item">
+            <i class="fa-solid fa-cannabis sub_header-item-icon"></i>
+            Growing & Garden
+        </div>
+        <div class="sub_header-item">
+            <i class="fa-solid fa-bolt sub_header-item-icon"></i>
+            Electrical Tools
+        </div>
+        <div class="sub_header-item">
+            <i class="fa-solid fa-baby-carriage sub_header-item-icon"></i>
+            Mother Care
+        </div>
+        <div class="sub_header-item">
+            <i class="fa-solid fa-radiation sub_header-item-icon"></i>
+            Toys & Entertainment
+        </div>
+        <div class="sub_header-item">
+            <i class="fa-solid fa-bug sub_header-item-icon"></i>
+            Vintage
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="grid_colum">
+            <div class="grid_colum_left">
+                <div class="directory">
+                    <h3 class="directory__heading">
+                        <i class="fa-solid fa-bars directory__heading-icon"></i>
+                        <button class="directory__heading-btn">Danh mục</button>
+                    </h3>
+                    <ul class="directory-list">
+                        <li class="directory-item">
+                            <div class="directory-item-icon">
+                                <i class="fa-solid fa-angle-right directory-item-icon-angle"></i>
+                                <a href="" class="directory-item-link">Tất cả</a>
+                            </div>
+                        </li>
+                        <li class="directory-item">
+                            <div class="directory-item-icon">
+                                <i class="fa-solid fa-angle-down directory-item-icon-angle"></i>
+                                <a href="" class="directory-item-link">Electrolics</a>
+                            </div>
+                        </li>
+                        <li class="directory-item">
+                            <div class="directory-item-icon">
+                                <i class="fa-solid fa-angle-down directory-item-icon-angle"></i>
+                                <a href="" class="directory-item-link">Cell Phone & Smartphone</a>
+                            </div>
+                        </li>
+                        <li class="directory-item">
+                            <div class="directory-item-icon">
+                                <a href="" class="directory-item-link ">Cell Phone A</a>
+                            </div>
+                        </li>
+                        <li class="directory-item">
+                            <div class="directory-item-icon">
+                                <a href="" class="directory-item-link ">Cell Phone G</a>
+                            </div>
+                        </li>
+                        <li class="directory-item">
+                            <div class="directory-item-icon">
+                                <a href="" class="directory-item-link directory-item-link-a">
+                                    <p class="blue-text">Xem Thêm</p>
+                                    <i
+                                        class="fa-solid fa-angle-down directory-item-icon-angle directory-item-icon-angle-p">
+                                    </i>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="directory-item">
+                            <div class="directory-item-icon">
+                                <i class="fa-solid fa-angle-down directory-item-icon-angle"></i>
+                                <a href="" class="directory-item-link">Business&</a>
+                            </div>
+                        </li>
+                        <li class="directory-item">
+                            <div class="directory-item-icon">
+                                <i class="fa-solid fa-angle-down directory-item-icon-angle"></i>
+                                <a href="" class="directory-item-link">Computer</a>
+                            </div>
+                        </li>
+                        <li class="directory-item">
+                            <div class="directory-item-icon">
+                                <i class="fa-solid fa-angle-down directory-item-icon-angle"></i>
+                                <a href="" class="directory-item-link">Home</a>
+                            </div>
+                        </li>
+                        <li class="directory-item">
+                            <div class="directory-item-icon">
+                                <a href="" class="directory-item-link  directory-item-link-add">
+                                    <p class="blue-text">Mở Rộng</p>
+                                </a>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="grid_colum_right">
+                <div class="grid_colum_right-top">
+                    <div class="home_filter">
+                        <p class="home_filter-text"> Cửa hàng nổi bật </p>
+                        <div class="home_filter-add">
+                            <p class="home_filter-add-p">Xem Thêm</p>
+                            <i class="fa-solid fa-angle-right home_filter-add-icon">
+                            </i>
+                        </div>
+                    </div>
+                    <div class="home_product">
+                        <div class="home_product-colum">
+                            <div class="home_product-colum-img-first">
+
+                            </div>
+                            <div class="home_product-colum-text">
+                                <p class="text_bold">Cửa hàng đồ ăn</p>
+                                <p class="home_product-colum-text-address">275 Nguyễn Trãi , Thanh Xuân</p>
+                                <div class="home_product-colum-text-star">
+                                    <div class="home_product-colum-text-block-star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half"></i>
+                                    </div>
+                                    <span>4.05</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="home_product-colum">
+                            <div class="home_product-colum-img-second">
+
+                            </div>
+                            <div class="home_product-colum-text">
+                                <p class="text_bold">Cửa hàng đồ ăn</p>
+                                <p class="home_product-colum-text-address">275 Nguyễn Trãi , Thanh Xuân</p>
+                                <div class="home_product-colum-text-star">
+                                    <div class="home_product-colum-text-block-star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half"></i>
+                                    </div>
+                                    <span>4.05</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="home_product-colum">
+                            <div class="home_product-colum-img-third">
+
+                            </div>
+                            <div class="home_product-colum-text">
+                                <p class="text_bold">Cửa hàng đồ ăn</p>
+                                <p class="home_product-colum-text-address">275 Nguyễn Trãi , Thanh Xuân</p>
+                                <div class="home_product-colum-text-star">
+                                    <div class="home_product-colum-text-block-star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half"></i>
+                                    </div>
+                                    <span>4.05</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="home_product-colum">
+                            <div class="home_product-colum-img-four">
+
+                            </div>
+                            <div class="home_product-colum-text">
+                                <p class="text_bold">Cửa hàng đồ ăn</p>
+                                <p class="home_product-colum-text-address">275 Nguyễn Trãi , Thanh Xuân</p>
+                                <div class="home_product-colum-text-star">
+                                    <div class="home_product-colum-text-block-star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half"></i>
+                                    </div>
+                                    <span>4.05</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_colum_right-buttom">
+                    <div class="home_sale">
+                        <p class="home_sale_text">Siêu khuyến mại hôm nay</p>
+                    </div>
+                    <div class="home_sale_content">
+                        <div class="home_sale_product">
+                            <div class="home_sale_product-img">
+
+                            </div>
+                            <div class="home_sale_product-text">
+                                <p class="home_sale_product-text-name">Đồ uống dinh dưỡng siêu trí tuệ</p>
+                                <p class="price-bold">12.480.000</p>
+                                <p class="home_sale_product-text-sale-off">Giảm 30%</p>
+                            </div>
+                        </div>
+                        <div class="home_sale_product">
+                            <div class="home_sale_product-img">
+
+                            </div>
+                            <div class="home_sale_product-text">
+                                <p class="home_sale_product-text-name">Đồ uống dinh dưỡng siêu trí tuệ</p>
+                                <p class="price-bold">12.480.000</p>
+                                <p class="home_sale_product-text-sale-off">Giảm 30%</p>
+                            </div>
+                        </div>
+                        <div class="home_sale_product">
+                            <div class="home_sale_product-img">
+
+                            </div>
+                            <div class="home_sale_product-text">
+                                <p class="home_sale_product-text-name">Đồ uống dinh dưỡng siêu trí tuệ</p>
+                                <p class="price-bold">12.480.000</p>
+                                <p class="home_sale_product-text-sale-off">Giảm 30%</p>
+                            </div>
+                        </div>
+                        <div class="home_sale_product">
+                            <div class="home_sale_product-img">
+
+                            </div>
+                            <div class="home_sale_product-text">
+                                <p class="home_sale_product-text-name">Đồ uống dinh dưỡng siêu trí tuệ</p>
+                                <p class="price-bold">12.480.000</p>
+                                <p class="home_sale_product-text-sale-off">Giảm 30%</p>
+                            </div>
+                        </div>
+                        <div class="home_sale_product">
+                            <div class="home_sale_product-img">
+
+                            </div>
+                            <div class="home_sale_product-text">
+                                <p class="home_sale_product-text-name">Đồ uống dinh dưỡng siêu trí tuệ</p>
+                                <p class="price-bold">12.480.000</p>
+                                <p class="home_sale_product-text-sale-off">Giảm 30%</p>
+                            </div>
+                        </div>
+                        <div class="home_sale_product">
+                            <div class="home_sale_product-img">
+
+                            </div>
+                            <div class="home_sale_product-text">
+                                <p class="home_sale_product-text-name">Đồ uống dinh dưỡng siêu trí tuệ</p>
+                                <p class="price-bold">12.480.000</p>
+                                <p class="home_sale_product-text-sale-off">Giảm 30%</p>
+                            </div>
+                        </div>
+                        <div class="home_sale_product">
+                            <div class="home_sale_product-img">
+
+                            </div>
+                            <div class="home_sale_product-text">
+                                <p class="home_sale_product-text-name">Đồ uống dinh dưỡng siêu trí tuệ</p>
+                                <p class="price-bold">12.480.000</p>
+                                <p class="home_sale_product-text-sale-off">Giảm 30%</p>
+                            </div>
+                        </div>
+                        <div class="home_sale_product">
+                            <div class="home_sale_product-img">
+
+                            </div>
+                            <div class="home_sale_product-text">
+                                <p class="home_sale_product-text-name">Đồ uống dinh dưỡng siêu trí tuệ</p>
+                                <p class="price-bold">12.480.000</p>
+                                <p class="home_sale_product-text-sale-off">Giảm 30%</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="home_sale-add">
+                        <div class="home_sale-add-item">
+                            <p class="home_sale-add-item-text">Xem Thêm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="login">
+        <div class="login__overlay">
+
+        </div>
+        <div class="login__body">
+            <div class="login__inner">
+                <div class="login-form">
+                    <div class="login-form__header">
+                        <div class="login-form__header-img">
+
+                        </div>
+                        <div class="login-form__exit-icon">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+                    <div class="login-form__body">
+                        <p class="login-form__body-text">Đăng nhập tài khoản</p>
+                        <input type="text" class="login-form__body-input" placeholder="Nhập số điện thoại hoặc email">
+                        <button class="login-form__body-btn">Tiếp tục</button>
+                    </div>
+                    <div class="login-form__footer">
+                        <p class="login-form__footer-text">Hoặc tiếp tục bằng</p>
+                        <div class="login-form__footer-icon">
+                            <i class="fa-brands fa-facebook login-form__footer-icon-fb"></i>
+                            <i class="fa-brands fa-google"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="shoppingcart">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js">
+    </script>
+</body>
+
+</html>
