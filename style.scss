@@ -5,8 +5,9 @@
 html {
     font-size: 62.5%;
     line-height: 1.6rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Inter', sans-serif;
     box-sizing: border-box;
+    font-weight: 400;
 }
 
 @import 'variables';
@@ -50,11 +51,12 @@ html {
     .header__search-input {
         width: 100%;
         height: 35px;
-        background-color: #f5f5f5;
+        background-color: $background-seach;
         border: none;
         border-radius: 20px;
         padding-left: 30px;
         font-size: 18px;
+        color: $text-color;
     }
 
     .header__search-icon {
@@ -127,10 +129,11 @@ html {
         margin-top: 10px;
         display: flex;
         flex-direction: column;
-    }
+        color: $sub_header-color;
 
-    .sub_header-item-icon {
-        margin: auto;
+        .sub_header-item-icon {
+            margin: auto;
+        }
     }
 
 }
@@ -164,10 +167,8 @@ html {
             }
 
             .directory-list {
-                list-style: none;
 
-                .directory-item {
-
+                .directory-item-caption {
 
                     .directory-item-icon {
                         @include center;
@@ -218,6 +219,168 @@ html {
                     }
 
                 }
+
+                .directory-item-expanded {
+
+
+                    .directory-item-icon {
+                        @include center;
+                        width: 260px;
+                        left: 8px;
+                        position: relative;
+
+                        .directory-item-link {
+                            @include center;
+                            text-decoration: none;
+                            font-size: 13px;
+                            color: black;
+                            padding: 18px 8px 16px;
+                            display: block;
+                            right: 0;
+                            width: 65%;
+                            height: 55px;
+                            font-weight: 500;
+
+                        }
+
+                        .directory-item-link-add {
+                            @include center;
+                            @include directory-item-link-a;
+                            width: 185px;
+
+                            .blue-text {
+                                color: $header-color;
+                            }
+                        }
+
+                        .directory-item-link-a {
+                            @include center;
+                            @include directory-item-link-a;
+                            width: 120px;
+
+                            .blue-text {
+                                color: $header-color;
+                            }
+
+                            .directory-item-icon-angle-p {
+                                margin-top: 5px;
+                                margin-left: 10px;
+                                position: relative;
+                                top: -3px;
+                            }
+                        }
+
+                        .directory-item-link:hover {
+                            color: $header-color;
+                        }
+                    }
+                }
+
+                .directory-item-expanded-sub {
+                    .directory-item-icon {
+                        @include center;
+                        width: 260px;
+                        left: 16px;
+                        position: relative;
+
+                        .directory-item-link {
+                            @include center;
+                            text-decoration: none;
+                            font-size: 13px;
+                            color: black;
+                            padding: 18px 8px 16px;
+                            display: block;
+                            right: 0;
+                            width: 65%;
+                            height: 55px;
+
+                        }
+
+                        .directory-item-link-add {
+                            @include center;
+                            @include directory-item-link-a;
+                            width: 185px;
+
+                            .blue-text {
+                                color: $header-color;
+                            }
+                        }
+
+                        .directory-item-link-a {
+                            @include center;
+                            @include directory-item-link-a;
+                            width: 120px;
+
+                            .blue-text {
+                                color: $header-color;
+                            }
+
+                            .directory-item-icon-angle-p {
+                                margin-top: 5px;
+                                margin-left: 10px;
+                                position: relative;
+                                top: -3px;
+                            }
+                        }
+
+                        .directory-item-link:hover {
+                            color: $header-color;
+                        }
+                    }
+                }
+
+                .directory-item-menu {
+                    .directory-item-icon {
+                        @include center;
+                        width: 260px;
+                        left: 8px;
+                        position: relative;
+
+                        .directory-item-link {
+                            @include center;
+                            text-decoration: none;
+                            font-size: 13px;
+                            color: black;
+                            padding: 18px 8px 16px;
+                            display: block;
+                            right: 0;
+                            width: 65%;
+                            height: 55px;
+                        }
+
+                        .directory-item-link-add {
+                            @include center;
+                            @include directory-item-link-a;
+                            width: 185px;
+
+                            .blue-text {
+                                color: $header-color;
+                            }
+                        }
+
+                        .directory-item-link-a {
+                            @include center;
+                            @include directory-item-link-a;
+                            width: 120px;
+
+                            .blue-text {
+                                color: $header-color;
+                            }
+
+                            .directory-item-icon-angle-p {
+                                margin-top: 5px;
+                                margin-left: 10px;
+                                position: relative;
+                                top: -3px;
+                            }
+                        }
+
+                        .directory-item-link:hover {
+                            color: $header-color;
+                        }
+                    }
+                }
+
             }
         }
 
@@ -335,9 +498,10 @@ html {
                     display: flex;
                     height: 100%;
                     flex-wrap: wrap;
+                    justify-content: space-between;
 
                     .home_sale_product:hover {
-                        box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.50);
+                        box-shadow: 0px 2px 4px rgba(59, 69, 123, 0.2), 0px 4px 8px rgba(92, 107, 192, 0.2);
                         z-index: 1;
                     }
 
@@ -370,6 +534,7 @@ html {
                                 width: 30%;
                                 text-align: center;
                                 border-radius: 6px;
+                                color: $background-btn-saleoff-color;
                             }
                         }
                     }
@@ -424,7 +589,7 @@ html {
         background-color: white;
         margin: auto;
         border-radius: 5px;
-        box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.50);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 
         .login__inner {
@@ -444,7 +609,11 @@ html {
                         background-repeat: no-repeat;
                         background-position: center;
                         width: 100%;
-                        height: 40px;
+                        height: 50px;
+                    }
+
+                    .login-form__exit-icon {
+                        font-size: 20px;
                     }
 
                 }
@@ -463,14 +632,14 @@ html {
                         margin-bottom: 24px;
                         border: none;
                         padding-left: 12px;
-                        background-color: #f9f8ff;
+                        background-color: #F6F9FC;
 
                     }
 
                     .login-form__body-btn {
                         border-radius: 5px;
                         height: 40px;
-                        background-color: rgb(37, 146, 255);
+                        background-color: $header-color;
                         border: none;
                         color: white;
                     }

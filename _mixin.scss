@@ -62,3 +62,10 @@
     background-position: center;
     height: 50%;
 }
+
+@mixin login-form__footer-icon {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50%;
+}
